@@ -1,0 +1,130 @@
+<!doctype html>
+<html lang="tr">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Not Listesi - Demo</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <div class="shell">
+    <aside class="sidebar">
+      <div class="sidehead">
+        <div class="logo">
+          <img src="Amasya_University_logo.png" alt="Logo">
+        </div>
+        <div style="text-align:center;">
+          <div style="font-weight:700;">AMASYA ÜNİVERSİTESİ</div>
+          <div class="u">Öğrenci Bilgi Sistemi</div>
+        </div>
+      </div>
+
+      <nav class="menu">
+        <a href="panel.html">🏠 Genel İşlemler <span>›</span></a>
+
+        <a href="not_listesi.html" class="active">📚 Ders ve Dönem İşlemleri <span>›</span></a>
+        <div class="sub">
+          <a href="#">□ Ders Kayıt</a>
+          <a href="not_listesi.html" class="active">□ Not Listesi</a>
+          <a href="#">□ Transkript</a>
+          <a href="#">□ Diğer Belgeler</a>
+        </div>
+
+        <a href="index.html">🚪 Çıkış <span>›</span></a>
+      </nav>
+    </aside>
+
+    <main class="content">
+      <div class="top">
+        <div>☰ 2025-2026 Bahar Dönemi</div>
+        <div>234705014 - SAHRİYE ASYA DİMA</div>
+      </div>
+
+      <div class="page">
+        <div class="tablewrap">
+          <div class="toolbar">
+            <div style="min-width:70px; color:var(--muted); font-size:13px;">Dönem</div>
+            <select onchange="window.location=this.value">
+              <option value="not_listesi.html" selected>2025-2026 Bahar Dönemi</option>
+              <option value="not_listesi_guz.html">2025-2026 Güz Dönemi</option>
+            </select>
+
+            <div style="margin-left:10px; color:var(--muted); font-size:13px;">Özet Not Durumu</div>
+          </div>
+
+          <table>
+            <thead>
+              <tr>
+                <th style="width:46px;">Şb</th>
+                <th style="width:110px;">Ders Kodu</th>
+                <th>Ders Adı</th>
+                <th style="width:150px;">Sonuç Durumu</th>
+                <th style="width:140px;">Sınav Notları</th>
+                <th style="width:70px;">Ort</th>
+                <th style="width:70px;">Not</th>
+                <th style="width:90px;">Durumu</th>
+                <th style="width:110px;"></th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>1</td>
+                <td>MBPS202</td>
+                <td>İLERİ AĞ TEKNOLOJİLERİ</td>
+                <td class="bad">Sonuçlandırılmadı</td>
+                <td>--</td>
+                <td>--</td>
+                <td>--</td>
+                <td>--</td>
+                <td><button class="btn">📊 İstatistik</button></td>
+              </tr>
+              <tr>
+                <td>1</td>
+                <td>MBPS206</td>
+                <td>MOBİL UYGULAMALAR VE PROGRAMLAMA</td>
+                <td class="bad">Sonuçlandırılmadı</td>
+                <td>--</td>
+                <td>--</td>
+                <td>--</td>
+                <td>--</td>
+                <td><button class="btn">📊 İstatistik</button></td>
+              </tr>
+              <tr>
+                <td>1</td>
+                <td>MBP202</td>
+                <td>İNTERNET PROGRAMCILIĞI - II</td>
+                <td class="bad">Sonuçlandırılmadı</td>
+                <td>--</td>
+                <td>--</td>
+                <td>--</td>
+                <td>--</td>
+                <td><button class="btn">📊 İstatistik</button></td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+
+        <div class="noteBox">
+          <b>Notlar</b>
+          <div style="margin-bottom:8px;">
+            <span class="bad">(Ders Sonuçlandırılmadı olarak görüntülenmesi)</span>
+            <a href="#">Ne anlama geliyor?</a>
+          </div>
+          <div>1- Yarıyıl sonu sınav notu henüz girilmedi</div>
+          <div>2- Tüm sınav notları girildi fakat harf notu henüz hesaplanmadı</div>
+          <div>3- Not girişi tamamlanmayan bütünleme sınavı mevcut</div>
+          <div>4- Bütünleme sınav notları girildi fakat henüz harf notu hesaplanmadı</div>
+          <div style="margin-top:10px;"><a href="#"><b style="display:inline;">Harf Notunun "--" olarak görünmesi ne
+                anlama geliyor:</b></a></div>
+          <div>1) Akademik takvime göre harf notlarının ilan tarihi bekleniyor</div>
+          <div>2) Ders sonuçlandırılmamış/ilan edilmemiş olabilir</div>
+          <div>3) Bütünleme sınavı tanımlanmış ise ilan tarihi beklenir</div>
+        </div>
+      </div>
+    </main>
+  </div>
+</body>
+
+</html>

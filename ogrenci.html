@@ -1,0 +1,64 @@
+<!doctype html>
+<html lang="tr">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Öğrenci Giriş - Demo</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <div class="center-wrap">
+    <div class="login-card">
+      <div style="display:flex; justify-content:space-between; align-items:center;">
+        <div></div>
+        <div style="font-size:12px;"><a href="#" style="color:#1d4ed8; text-decoration:none;">🌐 English</a></div>
+      </div>
+
+      <div style="display:grid; place-items:center; gap:10px; margin-top:8px;">
+        <div class="logo">
+          <img src="Amasya_University_logo.png" alt="Logo">
+        </div>
+        <div class="title">AMASYA ÜNİVERSİTESİ</div>
+        <div style="font-size:12px; color:var(--muted);">Öğrenci</div>
+      </div>
+
+      <div class="hr"></div>
+
+      <form action="panel.html" method="get">
+        <div class="formrow">
+          <label>Öğrenci No</label>
+          <input name="no" placeholder="Örn: 234705017">
+        </div>
+
+        <div class="formrow">
+          <label>Şifre</label>
+          <input type="password" name="pw" placeholder="••••••">
+        </div>
+
+        <div class="formrow">
+          <label>Sayıların Toplamı</label>
+          <div class="captcha">
+            <div class="img">24 + 6 = ?</div>
+            <input style="max-width:140px" name="cap" placeholder="Sonuç">
+            <button class="btn primary" type="submit">↪ Giriş</button>
+          </div>
+        </div>
+
+        <div class="links">
+          <a href="#">Şifremi Unuttum</a> / <a href="#">Şifre Sıfırla</a>
+        </div>
+
+        <button class="btn-wide" type="button">E-Devlet ile Giriş</button>
+
+        <div class="small-center">
+          <div style="margin-top:10px;"><a href="#">📣 Duyurular için tıklayınız</a></div>
+          <div style="margin-top:8px;">Oturum Açmak İçin Kalan Süre: 04:53</div>
+        </div>
+      </form>
+    </div>
+  </div>
+</body>
+
+</html>
