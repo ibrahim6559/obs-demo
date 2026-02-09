@@ -448,8 +448,9 @@ th {
 
 @media (max-width: 720px) {
     .sidebar {
-        display: none
+        display: block
     }
+
 
     .grid {
         grid-template-columns: 1fr
@@ -502,34 +503,13 @@ th {
     cursor: pointer;
 }
 
-/* MOBILE: hide sidebar, open with button */
 @media (max-width: 900px) {
     .menu-btn {
         display: inline-block;
+        position: relative;
+        z-index: 10000;
     }
 
-    .sidebar {
-        position: fixed;
-        top: 0;
-        left: -280px;
-        /* kapalı */
-        height: 100vh;
-        z-index: 9999;
-        transition: left .25s ease;
-    }
-
-    .sidebar.open {
-        left: 0;
-        /* açık */
-    }
-
-    .content {
-        margin-left: 0 !important;
-        /* mobilde içerik tam ekran */
-    }
-}
-
-@media (max-width: 900px) {
     .sidebar {
         display: block !important;
         width: 280px !important;
@@ -545,9 +525,11 @@ th {
         left: 0 !important;
     }
 
-    .menu-btn {
-        position: relative;
-        z-index: 10000;
-        /* buton her zaman üstte */
+    .content {
+        margin-left: 0 !important;
+    }
+
+    .grid {
+        grid-template-columns: 1fr;
     }
 }
