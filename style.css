@@ -528,3 +528,26 @@ th {
         /* mobilde içerik tam ekran */
     }
 }
+
+@media (max-width: 900px) {
+    .sidebar {
+        display: block !important;
+        width: 280px !important;
+        position: fixed !important;
+        top: 0 !important;
+        left: -280px !important;
+        height: 100vh !important;
+        z-index: 9999 !important;
+        transition: left .25s ease !important;
+    }
+
+    .sidebar.open {
+        left: 0 !important;
+    }
+
+    .menu-btn {
+        position: relative;
+        z-index: 10000;
+        /* buton her zaman üstte */
+    }
+}
