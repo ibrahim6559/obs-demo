@@ -484,3 +484,47 @@ th {
     object-fit: contain !important;
     display: block !important;
 }
+
+/* mobile menu button */
+.top-left {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.menu-btn {
+    display: none;
+    background: transparent;
+    border: none;
+    color: #fff;
+    font-size: 26px;
+    line-height: 1;
+    cursor: pointer;
+}
+
+/* MOBILE: hide sidebar, open with button */
+@media (max-width: 900px) {
+    .menu-btn {
+        display: inline-block;
+    }
+
+    .sidebar {
+        position: fixed;
+        top: 0;
+        left: -280px;
+        /* kapalı */
+        height: 100vh;
+        z-index: 9999;
+        transition: left .25s ease;
+    }
+
+    .sidebar.open {
+        left: 0;
+        /* açık */
+    }
+
+    .content {
+        margin-left: 0 !important;
+        /* mobilde içerik tam ekran */
+    }
+}
