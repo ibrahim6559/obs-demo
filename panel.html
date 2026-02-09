@@ -10,7 +10,8 @@
 
 <body>
   <div class="shell">
-    <aside class="sidebar">
+    <aside class="sidebar" id="sidebar">
+
       <div class="sidehead">
         <div class="logo">
           <img src="Amasya_University_logo.png" alt="Logo">
@@ -41,9 +42,9 @@
     </aside>
 
     <main class="content">
-      <div class="top">
-        <div>☰ 2025-2026 Bahar Dönemi</div>
-        <div>234705014 - SAHRİYE ASYA DİMA</div>
+      <div class="top-left">
+        <button class="menu-btn" type="button" onclick="toggleSidebar()">☰</button>
+        <span>2025-2026 Bahar Dönemi</span>
       </div>
 
       <div class="page">
@@ -75,6 +76,12 @@
       </div>
     </main>
   </div>
+  <script>
+    function toggleSidebar() {
+      document.getElementById("sidebar").classList.toggle("open");
+    }
+  </script>
+
 </body>
 
 </html>
